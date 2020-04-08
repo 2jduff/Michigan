@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/customized.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <script src="https://use.fontawesome.com/59db27d8b6.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="owl-carousel/owl.carousel.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    <title>Michigan</title>
+    <link rel="icon" type="image/png" href="css/images/jd.png">
+</head>
+<link href="//fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet">
+<!-- Header -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<script>
+    function storeHours() {
+    var d = new Date();
+    var weekday = new Array(7);
+    weekday[0] = '<p>Sunday 12pm - 5:00pm</p>';
+    weekday[1] = '<p>Monday 10am - 8:00pm</p>';
+    weekday[2] = '<p>Tuesday 10am - 6:00pm</p>';
+    weekday[3] = '<p>Wednesday 10am - 6:00pm</p>';
+    weekday[4] = '<p>Thursday 10am - 8:00pm</p>';
+    weekday[5] = '<p>Friday 10am - 8:00pm</p>';
+    weekday[6] = '<p>Saturday 10am - 8:00pm</p>';
+
+    var n = weekday[d.getDay()];
+    document.getElementById("scriptedstorehours").innerHTML = n;
+}
+$(document).ready(function() {
+    storeHours();
+});
+</script>
+<!-- Header -->
+<header>
+    <div id="top-header-container">
+        <div id="top-header" class="grid-container">
+            <div id="top-header-left">
+                <div id="scriptedstorehours" class="hide-on-mobile">
+                    <!-- Store hours are inserted via a script, do NOT delete this container. -->
+                </div>
+            </div>
+            <div id="top-header-middle">
+                <div class="header-search">
+                    <label class="hidden" for="SearchValue">Search</label>
+                    <input id="SearchValue" name="SearchValue" type="text" onkeypress="submitsearch(event);" placeholder="">
+                    <button onclick="goSearch();" type="button"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div id="top-header-right">
+                <div class="social hide-on-mobile">
+                    <ul>
+                        <li><a href="/"><i class="fa fa-facebook"><span class="hidden">Facebook</span></i></a></li>
+                        <li><a href="/"><i class="fa fa-twitter"><span class="hidden">Twitter</span></i></a></li>
+                        <li><a href="/"><i class="fa fa-linkedin"><span class="hidden">Linked In</span></i></a></li>
+                        <li><a href="/"><i class="fa fa-youtube"><span class="hidden">YouTube</span></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header-container">
+        <div id="header" class="grid-container">
+            <div id="header-left">
+                <div id="logo">
+                    <a href="/">
+                        <!-- <img src="css/logo.png" width="200" height="51" alt="Micro D" /> -->
+                        <h1>Michigan</h1>
+                    </a>
+                </div>
+            </div>
+            <div id="header-middle">
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="header-right">
+                <div id="account-nav">
+                    <div id="loggedinas" style="display: none; visibility: hidden"></div>
+                    <ul>
+                        <li><a href="tel:+1-800-964-3876"><i class="fa fa-phone fa-lg" aria-hidden="true"><span class="hidden">Phone</span></i></a></li>
+                        <li><a style="padding-right: 0" href="/viewcart.aspx"><i class="fa fa-shopping-cart" aria-hidden="true"></i>(<viewcartquantitysummary></viewcartquantitysummary>)</a></li>
+                        <li class="hide-on-mobile"><a style="padding-bottom: 10px;" href="javascript:void(0)"><i class="fa fa-user fa-lg" aria-hidden="true"><span class="hidden">Account</span></i></a>
+                            <ul>
+                                <li id="login"><a href="/login.aspx" rel="nofollow">Login</a></li>
+                                <li id="viewAccountLink" style="display: none;"><a href="/modifyaccount.aspx" rel="nofollow">View Account</a></li>
+                                <li id="logoutLink" style="display: none;"><a href="/homepage.aspx?logout=true" rel="nofollow">Logout</a></li>
+                                <li id="registerlink"><a href="/createaccount.aspx" rel="nofollow">Register</a></li>
+                                <li><a href="/favorites.aspx" rel="nofollow">Favorites</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main-nav-container">
+        <nav class="grid-container">
+            <ul class="main-nav hide-on-mobile ">
+                <li><a href="/living-room.inc">Living</a>
+                    <ul id="LivingRoom">
+                        <li><a href="/living-room/sofas/room-type.aspx"><span>Sofas</span></a></li>
+                        <li><a href="/living-room/sectionals/room-type.aspx"><span>Sectionals</span></a></li>
+                        <li><a href="/living-room/tables/room-type.aspx"><span>Tables</span></a></li>
+                        <li><a href="/living-room/chairs/room-type.aspx"><span>Chairs</span></a></li>
+                        <li><a href="/living-room/loveseats/room-type.aspx"><span>Loveseats</span></a></li>
+                        <li><a href="/living-room/chaises/room-type.aspx"><span>Chaises</span></a></li>
+                        <li><a href="/living-room/entertainment-centers/room-type.aspx"><span>Entertainment Centers</span></a></li>
+                        <li><a href="/living-room/chests-and-dressers/room-type.aspx"><span>Chests and Dressers</span></a></li>
+                        <li><a href="/living-room/cabinets/room-type.aspx"><span>Cabinets</span></a></li>
+                        <li><a href="/living-room/bookcases/room-type.aspx"><span>Bookcases</span></a></li>
+                        <li><a href="/living-room/benches/room-type.aspx"><span>Benches</span></a></li>
+                        <li><a href="/living-room/ottomans/room-type.aspx"><span>Ottomans</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/dining-room.inc">Dining</a>
+                    <ul id="DiningRoom">
+                        <li><a href="/dining-room/tables/room-type.aspx"><span>Tables</span></a></li>
+                        <li><a href="/dining-room/chairs/room-type.aspx"><span>Chairs</span></a></li>
+                        <li><a href="/dining-room/cabinets/room-type.aspx"><span>Cabinets</span></a></li>
+                        <li><a href="/dining-room/bookcases/room-type.aspx"><span>Bookcases</span></a></li>
+                        <li><a href="/dining-room/benches/room-type.aspx"><span>Benches</span></a></li>
+                        <li><a href="/dining-room/stools/room-type.aspx"><span>Stools</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/bedroom.inc">Bedroom</a>
+                    <ul id="Bedroom">
+                        <li><a href="/bedroom/beds/room-type.aspx"><span>Beds</span></a></li>
+                        <li><a href="/bedroom/tables/room-type.aspx"><span>Tables</span></a></li>
+                        <li><a href="/bedroom/chairs/room-type.aspx"><span>Chairs</span></a></li>
+                        <li><a href="/bedroom/bedding/room-type.aspx"><span>Bedding</span></a></li>
+                        <li><a href="/bedroom/desks/room-type.aspx"><span>Desks</span></a></li>
+                        <li><a href="/bedroom/chests-and-dressers/room-type.aspx"><span>Chests and Dressers</span></a></li>
+                        <li><a href="/bedroom/cabinets/room-type.aspx"><span>Cabinets</span></a></li>
+                        <li><a href="/bedroom/accessories/room-type.aspx"><span>Accessories</span></a></li>
+                        <li><a href="/bedroom/benches/room-type.aspx"><span>Benches</span></a></li>
+                        <li><a href="/bedroom/ottomans/room-type.aspx"><span>Ottomans</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/mattresses/default.inc">Mattresses</a></li>
+                <li><a href="/home-office.inc">Office</a>
+                    <ul id="HomeOffice">
+                        <li><a href="/home-office/chairs/department-type.aspx"><span>Chairs</span></a></li>
+                        <li><a href="/home-office/desks/department-type.aspx"><span>Desks</span></a></li>
+                        <li><a href="/home-office/cabinets/department-type.aspx"><span>Cabinets</span></a></li>
+                        <li><a href="/home-office/bookcases/department-type.aspx"><span>Bookcases</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="/entertainment.inc">Media</a>
+                    <ul id="HomeEntertainemnt">
+                        <li><a href="/home-entertainment/tables/department-type.aspx"><span>Tables</span></a></li>
+                        <li><a href="/home-entertainment/entertainment-centers/department-type.aspx"><span>Entertainment Centers</span></a></li>
+                        <li><a href="/home-entertainment/cabinets/department-type.aspx"><span>Cabinets</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">About Us</a>
+                    <ul>
+                        <li><a href="/about-us.inc">About Us</a></li>
+                        <li><a href="/contact-us.inc">Locations</a></li>
+                        <li><a href="/design-center.inc">Design Center</a></li>
+                        <li><a href="/room-planner.inc">Room Planner</a></li>
+                        <li><a href="/brands.inc">Our Brands</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="clear"></div>
+</header>
+<!-- End Header -->
+<!--Homepage  -->
+<section>
+    <div id="slideshow" class="owl-carousel owl-theme">
+        <div class="item"><a href="/" alt="Living Room"><img src="css/images/living-room-1200x400.jpg" width="1200" height="400" alt="Living Room" /></a></div>
+        <div class="item"><a href="/" alt="Dining Room"><img src="css/images/dining-room-1200x400.jpg" width="1200" height="400" alt="Dining Room" /></a></div>
+        <div class="item"><a href="/" alt="Bedroom"><img src="css/images/bedroom-1200x400.jpg" width="1200" height="400" alt="Bedroom" /></a></div>
+        <div class="item"><a href="/" alt="Home Office"><img src="css/images/office-1200x400.jpg" width="1200" height="400" alt="Home Office" /></a></div>
+        <div class="item"><a href="/" alt="Home Entertainment"><img src="css/images/entertainment-1200x400.jpg" width="1200" height="400" alt="Home Entertainment" /></a></div>
+        <div class="item"><a href="/" alt="Accessories"><img src="css/images/accessories-1200x400.jpg" width="1200" height="400" alt="Accessories" /></a></div>
+    </div>
+    <div class="overlay">
+        <h1>DESIGN WITH QUALITY</h1>
+        <p>Save up to 25% on name brand sofas!</p>
+        <a href="/customer-care.inc" class="button">Our Services</a>
+        <a href="/contact-us.inc" class="button">Contact Us</a>
+    </div>
+</section>
+<div class="grid-container">
+    <section>
+        <h2>Shop by Room</h2>
+        <hr />
+        <div id="shop-by-room">
+            <div>
+                <img src="css/images/dining-room-1920x1080.jpg" width="363" height="240" alt="Dining" /><br /><a href="/dining-room.inc" class="button">Dining</a>
+            </div>
+            <div>
+                <img src="css/images/living-room-1920x1080.jpg" width="363" height="240" alt="Living" /><br /><a href="/living-room.inc" class="button">Living</a>
+            </div>
+            <div>
+                <img src="css/images/bedroom-1920x1080.jpg" width="363" height="240" alt="Bedroom" /><br /><a href="/bedroom.inc" class="button">Bedroom</a>
+            </div>
+            <div>
+                <img src="css/images/office-1920x1080.jpg" width="363" height="240" alt="Office" /><br /><a href="/home-office.inc" class="button">Office</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Sleep Center</h2>
+        <hr />
+        <div id="home-sleep-center">
+            <a href="/mattresses/"><img src="css/images/home-sleep-center-pic.jpg" width="1336" height="507" alt="Sleep Center" /></a><br />
+            <a class="button" href="/mattresses/">Find Your Mattress</a>
+        </div>
+    </section>
+    <section>
+        <h2>Who We Are</h2>
+        <hr />
+        <div id="home-who-we-are">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perferendis earum reprehenderit reiciendis nostrum illum quasi voluptatem recusandae temporibus perspiciatis, asperiores aspernatur aperiam modi doloremque laboriosam vitae cupiditate, neque iusto.</p><br />
+            <a class="button" href="#">Learn More</a>
+        </div>
+    </section>
+    <section>
+        <h2>Design &amp; Sales</h2>
+        <hr />
+        <div class="design">
+            <div class="design-container">
+                <img src="css/images/design-services-900x600.jpg" width="480" height="360" alt="" />
+                <div class="design-text">
+                    <h2>Design Services</h2>
+                    <a href="/design-services.inc">View more</a>
+                </div>
+            </div>
+            <div class="design-container">
+                <img src="css/images/featured-brands-900x600.jpg" width="480" height="360" alt="" />
+                <div class="design-text">
+                    <h2>Featured Brands</span></h2>
+                    <a href="/brands.inc">View more</a>
+                </div>
+            </div>
+            <div class="design-container">
+                <img src="css/images/inside-store-900x600.jpg" width="480" height="360" alt="" />
+                <div class="design-text">
+                    <h2>Clearance</h2>
+                    <a href="/">View more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!--  End Homepage -->
+<!-- Footer -->
+<footer>
+    <div id="footer-container">
+        <div id="footer">
+            <div>
+                <h1>Michigan</h1>
+                <!-- <img src="css/images/MD-logo-white.png" width="200" height="51" alt="MicroD"> -->
+                <p>1234 Main St.<br />Michigan</p>
+                <p>Phone: 888-888-8888</p>
+                <p><a href="/contact-us.inc">Get Directions</a></p>
+                <div class="social">
+                    <ul>
+                        <li><a href="/"><i class="fa fa-facebook"><span class="hidden">Facebook</span></i></a></li>
+                        <li><a href="/"><i class="fa fa-twitter"><span class="hidden">Twitter</span></i></a></li>
+                        <li><a href="/"><i class="fa fa-linkedin"><span class="hidden">Linked In</span></i></a></li>
+                        <li><a href="/"><i class="fa fa-youtube"><span class="hidden">YouTube</span></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="/livng-room.inc">Living</a></li>
+                    <li><a href="/dining-room.inc">Dining</a></li>
+                    <li><a href="/bedroom.inc">Bedroom</a></li>
+                    <li><a href="/mattresses/">Mattresses</a></li>
+                    <li><a href="/entertainment.inc">Media</a></li>
+                    <li><a href="/home-office.inc">Office</a></li>
+                    <li><a href="/accessories.inc">Accents</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Store</h3>
+                <ul>
+                    <li><a href="/about-us.inc">About Us</a></li>
+                    <li><a href="/contact-us.inc">Locations</a></li>
+                    <li><a href="/design-center.inc">Design Center</a></li>
+                    <li><a href="/room-planner.inc">Room Planner</a></li>
+                    <li><a href="/brands.inc">Our Brands</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Sales</h3>
+                <ul>
+                    <li><a href="/display-flyer.aspx">Promotions</a></li>
+                    <li><a href="/clearance/skustatus-type.aspx">Clearance</a></li>
+                    <li><a href="/join-email.inc">Join Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright" class="grid-container">
+            <p>&copy; <script>
+                document.write(new Date().getFullYear())
+                </script> Michigan | <a href="/visual-site-map.inc">Site Map</a></p>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+<script>
+$(document).ready(function() {
+    $('#nav-icon').click(function() {
+        $(this).toggleClass('open');
+        $('.main-nav').toggle('slow');
+    });
+
+    $("#slideshow").owlCarousel({
+        loop: true,
+        autoplay: true,
+        nav: true,
+        items: 1,
+        nav: false,
+        dots: false
+    });
+});
+</script>
